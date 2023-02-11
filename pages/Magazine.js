@@ -46,6 +46,15 @@ const Magazine = () => {
             It is the net balance of cash moving in and out of a business at a specific point in time.
           </p></div>
           <div className='bg-teal-200 text-black border-black px-2 py-2 border-solid border-4 rounded-lg '><div className='text-center font-bold text-2xl py-1'>Brush Up Fin!</div><p className='py-11'>
+          <div className="py-2  font-bold">&#8377; Income </div>
+            &#9734; List all sources of money that you receive in a month. <br/>
+            &#9734; It includes paychecks, investment income and money that you make from side jobs.<br/>
+            &#9734; You should find ways to increase your income morally.<br/>
+            <div className="py-2  font-bold">&#8377; Expenses </div>
+            &#9734; List all purachases that you receive in a month. <br/>
+            &#9734; It is advisable to cut down on unnecessary spendings.<br/>
+
+
             <div className="py-2  font-bold">&#8377; Budgeting  </div>
             &#9734; Keeping track of one’s spending patterns.
                  <div className="py-2 font-bold">&#8377; Debt </div>
@@ -57,6 +66,8 @@ const Magazine = () => {
             <div className="py-2  font-bold">&#8377; Investment  </div>
             &#9734; Investments assist in the generation of additional monthly income. <br/>
             &#9734; Mutual funds, real estate, and gold are some of the most popular investment possibilities.
+            
+            
             
           </p></div>
 
