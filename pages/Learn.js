@@ -1,7 +1,7 @@
 import React from "react";
 import book from '../public/bookstory.jpeg'
 import Image from "next/image";
-import dollar from '../public/dollarS.jpeg'
+
 import Link from "next/link";
 export default function Learn() { 
 
