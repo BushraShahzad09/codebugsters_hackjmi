@@ -87,22 +87,39 @@ const Home = () => {
 
         <div class='infocontainer'>
           <div class='contact'>
-            <h2>Contact us</h2>
+            <h2>FAQ</h2>
             <p>
-              Thank you for visiting our website! We value your feedback and questions, and are here to assist you in any way we can. 
+              Welcome to our FAQ section! Here, you will find answers to the most commonly asked questions about our products and services. This section is designed to provide quick and convenient support to our valued customers. 
             </p>
             <p>
-              If you need to get in touch with us, please don't hesitate to use the contact form on this page or send an <a class='email-link' href = "mailto: abc@example.com">email</a>. 
-            </p>
-            <p>
-              Our team will respond to you as soon as possible. For the quickest assistance, please include as much detail as possible in your message. We look forward to hearing from you! 
+              If you're unable to find the answer to your question, don't hesitate to contact us through our support channels. We're always here to help and ensure that your experience with us is a positive one.  
             </p>
 
+
             <button primary="true" class='info_button'>
-              Contact
+              FAQ
             </button>        
           </div>
+          <img class='faq_image' src='/faq.png' alt='tree gif'/>
+        </div>
+
+        <div class='infocontainer'>
           <img class='contact_image' src='/contact.png' alt='tree gif'/>
+          <div class='contact'>
+              <h2>Reach Us</h2>
+              <p>
+                Thank you for visiting our website! We value your feedback and questions, and are here to assist you in any way we can. 
+              </p>
+              <p>
+                If you need to get in touch with us, please don't hesitate to use the contact form on this page or send an <a class='email-link' href = "mailto: abc@example.com">email</a>. 
+              </p>
+              <p>
+                Our team will respond to you as soon as possible. For the quickest assistance, please include as much detail as possible in your message. We look forward to hearing from you! 
+              </p>
+              <button primary="true" class='info_button'>
+                Contact
+              </button>        
+            </div> 
         </div>
 
 
