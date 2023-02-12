@@ -51,13 +51,13 @@ const Home = () => {
           <div class='learn'>
             <h2>Learn Everything</h2>
             <p>
-              "I think we showed many good things, but still, we have a lot to improve," Martinez said after Wednesday night’s victory. "It's a good result, I think we controlled the game today. In training, we [him and Lindelof] work with each other and I think we're doing a really good job."  
+              Financial literacy is a critical life skill that enables individuals to make informed decisions about their finances and investments. Our financial literacy web app is designed to help individuals of all ages learn about money management, budgeting, saving, investing, and other crucial financial topics. 
             </p>
             <p>
-              Lindelof is unlikely to be starting regularly for United should both Varane and Martinez be fit and available, but the former Benfica player has done his chances no harm. The relationship shared by the two first-choice central defenders off the pitch also bodes well for United.
+              It provides a comprehensive and user-friendly interface with interactive tools and resources to help users gain a deeper understanding.
             </p>
             <p>
-              Former United defender Rio Ferdinand was immediately impressed by their connection, describing them as “almost like the perfect couple”. They have established themselves as fan favourites at Old Trafford this season
+              Learn everything enjoyabily and effectively through engaging and interactive lessons, quizzes, and magazines. Whether you are a student, a working professional, or a retiree, our platform provides the knowledge and tools you need to take control of your financial future and achieve your financial goals.  
             </p>
             <button primary="true" class='info_button'>
               Learn
@@ -71,13 +71,13 @@ const Home = () => {
           <div class='ai'>
               <h2>Ask Anything</h2>
               <p>
-                Harry Maguire, Aaron Wan-Bissaka and Scott McTominay will not leave Manchester United this month; Wan-Bissaka has impressed manager Erik ten Hag with his performances recently; United to consider loan offers for forwards Anthony Elanga and Facundo Pellistri  
+                F'ed AI is an AI-based innovative tool that can answer all of your questions related to finance. This tool uses advanced natural language processing and machine learning algorithms to understand and respond to your queries. 
               </p>
               <p>
-                Chelsea’s policy of dishing out long-term contracts to new signings, which UEFA want to outlaw, has also left them in a strong position with regards to Financial Fair Play rules.
+                Whether you need help with budgeting, saving, investing, or managing debt, F'ed AI can provide you with relevant information and advice. It is a convenient and accessible way to learn about finance, as you can access F'ed AI from anywhere, at any time, simply by sending a message. 
               </p>
-              <p>
-                Despite the prospect of being sold in the near future, United have to tread more carefully to navigate those restrictions, largely due to over-spending on signings who have flopped in previous windows.
+              <p>  
+                With its ability to understand and respond to a wide range of financial questions, this AI-based tool is a valuable resource for anyone looking to improve their financial literacy. 
               </p>
               <button primary="true" class='info_button'>
                 Ask
@@ -85,6 +85,25 @@ const Home = () => {
             </div> 
         </div>
 
+        <div class='infocontainer'>
+          <div class='contact'>
+            <h2>Contact us</h2>
+            <p>
+              Thank you for visiting our website! We value your feedback and questions, and are here to assist you in any way we can. 
+            </p>
+            <p>
+              If you need to get in touch with us, please don't hesitate to use the contact form on this page or send an <a class='email-link' href = "mailto: abc@example.com">email</a>. 
+            </p>
+            <p>
+              Our team will respond to you as soon as possible. For the quickest assistance, please include as much detail as possible in your message. We look forward to hearing from you! 
+            </p>
+
+            <button primary="true" class='info_button'>
+              Contact
+            </button>        
+          </div>
+          <img class='contact_image' src='/contact.png' alt='tree gif'/>
+        </div>
 
 
       </div>
