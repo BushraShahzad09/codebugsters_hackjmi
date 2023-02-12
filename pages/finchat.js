@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import React from 'react';
-import Faq from '@/components/Faq';
+// import Faq from '@/components/Faq';
 import { useState } from 'react';
 
 
@@ -68,7 +68,7 @@ export default function finchat() {
           dangerouslySetInnerHTML={{ __html: result }}
         />
       </main>
-      <Faq />
+      {/* <Faq /> */}
     </div>
   );
 }

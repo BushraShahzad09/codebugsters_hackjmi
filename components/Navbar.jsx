@@ -4,12 +4,12 @@ import Link from "next/link"
 export default function Navbar() {
    const [navbar , setNavbar] = useState(false)
     return(
-        <nav className="w-full bg-green-700 shadow border border-black ">
+        <nav className="w-full bg-lightblue-700 shadow border ">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
             <div className="flex items-center justify-between py-3 md:py-5 md:block">
               <Link href='/'>
-                <h2 className="text-2xl text-white font-bold">Get F'ed</h2>
+                <h2 className="text-2xl text-lightblue font-bold">Get F'ed</h2>
                 </Link>
               <div className="md:hidden">
                 <button
@@ -57,25 +57,42 @@ export default function Navbar() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                
-                <li className="text-white">
+                <li className="text-black">
                   <Link href="/Learn">
                     Learn
                   </Link>
                 </li>
-                <li className="text-white">
+                <li className="text-black">
                   <Link href="/finchat">
                   F'ed AI
                   </Link>
                 </li>
-                <li className="text-white">
+                <li className="text-black">
+                  <Link href="/Faq">
+                  FAQ
+                  </Link>
+                </li>
+                <li className="text-black">
                   <Link href="/About">
                     About
                   </Link>
                 </li>
+                <li className="text-black">
+                  <Link href="/reach">
+                  Reach Us
+                  </Link>
+                </li>
+
                 <li>
                     <Link href="/api/auth/login">
-                        <button className="bg-blue-500 text-white px-4 rounded-xl py-2">Signup</button>
+                        <button className="bg-blue-500 text-white px-4 rounded-xl py-2">Sign Up</button>
                     </Link>
+                </li>
+                <li>
+                  <Link href="/darkmode.js">
+                    <button id="toggle-dark-mode-btn">Dark Mode</button>   
+                  </Link>
+                
                 </li>
               </ul>
             </div>
