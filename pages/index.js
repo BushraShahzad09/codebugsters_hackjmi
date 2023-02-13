@@ -1,33 +1,15 @@
 import React from "react"
 import Head from "next/head"
-import { useState,useEffect } from "react";
 
-
-
-// const LoadingAnimation = () => {
-//   const [loading, setLoading] = useState(true);
-
-//   useEffect(() => {
-//     setTimeout(() => {
-//       setLoading(false);
-//     }, 3000);
-//   }, []);
-
-//   return (
-//     <div style={{ display: loading ? "block" : "none" }} className="bg-cover h-screen w-screen my-auto mx-auto place-content-center mt-56">
-//       <img src="/giphy.gif" alt="Loading animation" />
-//     </div>
-//   );
-// };
-
+import Link from "next/link";
 
 const Home = () => {
  
   return (
     <div>
       <Head>
-        <title>Get F'ed</title>
-        <link rel="icon" href="/logo.png" />
+        <title>FinWise</title>
+        <link rel="icon" href="/logu.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
         
       </Head>
@@ -35,7 +17,7 @@ const Home = () => {
       <div class='container'>
         <div class='text'>
           <h1 class='main-heading'>Learn <br/>interactively.</h1>
-          <p class='sub-text'><span class='project-name'>Get F'ed</span> is a platform that<br/>empowers you with financial<br/>knowledge and assists you in<br/>reaching your financial goals.</p>
+          <p class='sub-text'><span class='project-name'>FinWise</span> is a platform that<br/>empowers you with financial<br/>knowledge and assists you in<br/>reaching your financial goals.</p>
           <button type="button" class='main-button'>Start Exploring</button>
 
         </div>
@@ -59,9 +41,11 @@ const Home = () => {
             <p>
               Learn everything enjoyabily and effectively through engaging and interactive lessons, quizzes, and magazines. Whether you are a student, a working professional, or a retiree, our platform provides the knowledge and tools you need to take control of your financial future and achieve your financial goals.  
             </p>
+            <Link href='/Learn'>
             <button primary="true" class='info_button'>
               Learn
-            </button>        
+            </button>  
+            </Link>      
           </div>
           <img class='learn_image' src='/learn.png' alt='tree gif'/>
         </div>
@@ -71,7 +55,7 @@ const Home = () => {
           <div class='ai'>
               <h2>Ask Anything</h2>
               <p>
-                F'ed AI is an AI-based innovative tool that can answer all of your questions related to finance. This tool uses advanced natural language processing and machine learning algorithms to understand and respond to your queries. 
+                Wise AI is an AI-based innovative tool that can answer all of your questions related to finance. This tool uses advanced natural language processing and machine learning algorithms to understand and respond to your queries. 
               </p>
               <p>
                 Whether you need help with budgeting, saving, investing, or managing debt, F'ed AI can provide you with relevant information and advice. It is a convenient and accessible way to learn about finance, as you can access F'ed AI from anywhere, at any time, simply by sending a message. 
@@ -79,9 +63,11 @@ const Home = () => {
               <p>  
                 With its ability to understand and respond to a wide range of financial questions, this AI-based tool is a valuable resource for anyone looking to improve their financial literacy. 
               </p>
+              <Link href='/finchat'>
               <button primary="true" class='info_button'>
                 Ask
-              </button>        
+              </button>    
+              </Link>    
             </div> 
         </div>
 
@@ -95,10 +81,11 @@ const Home = () => {
               If you're unable to find the answer to your question, don't hesitate to contact us through our support channels. We're always here to help and ensure that your experience with us is a positive one.  
             </p>
 
-
+<Link href='/Faq'>
             <button primary="true" class='info_button'>
               FAQ
-            </button>        
+            </button>  
+            </Link>      
           </div>
           <img class='faq_image' src='/faq.png' alt='tree gif'/>
         </div>

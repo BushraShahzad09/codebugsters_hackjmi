@@ -5,15 +5,11 @@ import { useRef } from 'react';
 const Magazine = () => {
   const pagee = useRef(null);
   return (
-    <div style={{
-      backgroundImage: 'url(/bgpg.png)',
-      backgroundSize: 'cover',
-
-    }}>
+    <div >
       <div className="flex place-content-center items-center align-middle h-full">
         <HTMLFlipBook width={500} height={800} ref={pagee}>
-          <div className='bg-white border-black px-2 py-2 border-solid border-4 text-center items-center rounded-lg'><h1 className='font-mono text-xl font-bold py-8'>Read Interesting <br /> Articles</h1><img src='/tree.gif' alt='cover' className='mx-auto mt-40' /><h1 className='font-mono text-xl font-bold pt-24'>The Speaking Tree</h1></div>
-          <div className='bg-teal-200 text-black border-black px-2 py-2 border-solid border-4 rounded-lg '><div className='text-center font-bold text-2xl py-1'>Brush Up Fin!</div><p className='py-11'>
+          <div className='bg-white border-black px-2 py-2 border-solid border-1 text-center items-center rounded-lg'><h1 className='font-mono text-xl font-bold py-8'>Read Interesting <br /> Articles</h1><img src='/tree.gif' alt='cover' className='mx-auto mt-40' /><h1 className='font-mono text-xl font-bold pt-24'>The Speaking Tree</h1></div>
+          <div className='bg-teal-200 text-black border-black px-2 py-2 border-solid border-2 rounded-lg '><div className='text-center font-bold text-2xl py-1'>Brush Up Fin!</div><p className='py-11'>
             <div className="py-2  font-bold">&#8377; Income </div>
             &#9734; List all sources of money that you receive in a month. <br />
             &#9734; It includes paychecks, investment income and money that you make from side jobs.<br />
@@ -33,7 +29,7 @@ const Magazine = () => {
             &#9734; Investments assist in the generation of additional monthly income. <br />
             &#9734; Mutual funds, real estate, and gold are some of the most popular investment possibilities.
           </p></div>
-          <div className='bg-orange-200 text-black border-black px-2 py-2 border-solid border-4 rounded-lg '><div className='text-center font-bold text-2xl py-1'>50/20/30 Budget Rule</div><p className='py-11'>
+          <div className='bg-orange-200 text-black border-black px-2 py-2 border-solid border-2 rounded-lg '><div className='text-center font-bold text-2xl py-1'>50/20/30 Budget Rule</div><p className='py-11'>
             <div className="text-center py-3 text-xl font-bold">&#8377; 50% Needs</div>
             &#9734; Needs are those bills that you absolutely necessary for survival.<br />
             &#9734; Half of your after-tax income should cover your needs and obligations.<br />
@@ -49,7 +45,7 @@ const Magazine = () => {
             <div className="text-center py-3 text-xl font-bold">&#8377; Pro tip</div>
             &#9734; You should have at least three months of emergency savings on hand in case you lose your job or an unforeseen event occurs.<br /> God Forbid!<br />
           </p></div>
-          <div className='bg-amber-100 text-black border-black px-2 py-2 border-solid border-4 rounded-lg '><div className='text-center font-bold text-2xl py-1'>Shark Tank Terminology!</div><p className='py-11'>
+          <div className='bg-amber-100 text-black border-black px-2 py-2 border-solid border-2 rounded-lg '><div className='text-center font-bold text-2xl py-1'>Shark Tank Terminology!</div><p className='py-11'>
             <div className="py-2  font-bold">&#8377; Assests : </div>
             Assets are items that can provide future benefit to your business, such as cash, inventory, real estate.<br />
             <div className="py-2 font-bold">&#8377; Balance Sheet : </div>
@@ -66,7 +62,7 @@ const Magazine = () => {
             It is the net balance of cash moving in and out of a business at a specific point in time.
           </p></div>
           
-          <div className='bg-slate-300 text-black border-black px-2 py-2 border-solid border-4 rounded-lg '><div className='text-center font-bold text-2xl py-1'>Stocketing!</div><p className='py-11'>
+          <div className='bg-slate-300 text-black border-black px-2 py-2 border-solid border-2 rounded-lg '><div className='text-center font-bold text-2xl py-1'>Stocketing!</div><p className='py-11'>
             <div className="py-2 font-bold">&#8377; Stocks </div>
             &#9734; When you invest in stocks, you get a slice of ownership in a company that can yield returns if it's successful. <br />
             <div className="py-2 font-bold">&#8377; Goals & Budget </div>

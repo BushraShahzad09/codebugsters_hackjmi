@@ -1,16 +1,22 @@
 import React,{ useState } from "react"
 import Link from "next/link"
+import { useUser } from "@auth0/nextjs-auth0/client";
+import Image from "next/image";
+import logo from '../public/finwise.png'
 
 export default function Navbar() {
    const [navbar , setNavbar] = useState(false)
+   const {user} = useUser();
     return(
-        <nav className="w-full bg-lightblue-700 shadow border ">
+        <nav className="w-full shadow border ">
         <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
           <div>
-            <div className="flex items-center justify-between py-3 md:py-5 md:block">
+            <div className="py-5">
+            
               <Link href='/'>
-                <h2 className="text-2xl text-lightblue font-bold">Get F'ed</h2>
+                <h2 className="tracking-widest font-mono text-xl  rounded-sm  px-2 text-cyan-800">Fin<i><b>Wise</b></i></h2>
                 </Link>
+              
               <div className="md:hidden">
                 <button
                   className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -57,43 +63,39 @@ export default function Navbar() {
             >
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                
-                <li className="text-black">
+                <li className="text-cyan-900 font-serif font-semibold tracking-wide">
                   <Link href="/Learn">
-                    Learn
+                    MoneyWise
                   </Link>
                 </li>
-                <li className="text-black">
+                <li className="text-cyan-900 font-serif font-semibold tracking-wide">
                   <Link href="/finchat">
-                  F'ed AI
+                  Wise AI
                   </Link>
                 </li>
-                <li className="text-black">
+                <li className="text-cyan-900 font-serif font-semibold tracking-wide">
                   <Link href="/Faq">
                   FAQ
                   </Link>
                 </li>
-                <li className="text-black">
+                <li className="text-cyan-900 font-serif font-semibold tracking-wide">
                   <Link href="/About">
                     About
                   </Link>
                 </li>
-                <li className="text-black">
-                  <Link href="/reach">
-                  Reach Us
-                  </Link>
-                </li>
-
-                <li>
+               
+{!user && <li>
                     <Link href="/api/auth/login">
-                        <button className="bg-blue-500 text-white px-4 rounded-xl py-2">Sign Up</button>
+                        <button className="bg-blue-500 text-white px-3 rounded-xl py-1 font-serif tracking-wide">Sign Up</button>
                     </Link>
-                </li>
-                <li>
-                  <Link href="/darkmode.js">
-                    <button id="toggle-dark-mode-btn">Dark Mode</button>   
-                  </Link>
-                
-                </li>
+                </li>}
+
+               
+          {user && <li>
+            <Link href='/api/auth/logout'>
+            <button className="bg-blue-500 text-white px-3 rounded-xl py-1 font-serif tracking-wide">Logout</button>
+            </Link>
+            </li>}
               </ul>
             </div>
           </div>

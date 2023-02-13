@@ -431,3 +431,67 @@ footer {
     margin: 20px auto;
 }
   
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
+  .first_line,
+.second_line {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-family: "Major Mono Display", monospace;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.first_line {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+}
+.second_line {
+  border-right: 2px solid rgba(17, 17, 17, 0.9);
+}
+@keyframes typewriter_1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 38rem;
+    }
+  }
+  @keyframes typewriter_2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 40rem;
+    }
+  }
+  .first_line {
+    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    animation: typewriter_1 6s 
+  }
+  .second_line {
+    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    animation: typewriter_2 5s 
+  }
+  

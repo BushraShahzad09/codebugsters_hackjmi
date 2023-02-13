@@ -1,54 +1,39 @@
 import React from "react";
 import book from '../public/bookstory.jpeg'
 import Image from "next/image";
-
 import Link from "next/link";
-export default function Learn() { 
+export default function Learn() {
 
-    return(
-       
-        <div style={{
-          backgroundImage: 'url(/story.png)',
-          backgroundSize: 'cover',
-          
-        }}>
-            <div className="flex place-content-center py-3 font-mono text-xl ">
-            <h1>Learn in the most interactive way !</h1>
+    return (
+        <div className="flex flex-col items-center mt-10">
+          <h1 className="text-2xl  font-serif tracking-wide text-cyan-900">Choose Your <i><b>Way of Learning</b></i> </h1>
+          <div className="grid grid-cols-2 gap-10 mt-10 place-content-center items-center justify-center ">
+            <div className="grid grid-rows-2">
+              <Link href="/Story1">
+                <img
+                  src="/ask.png"
+                  alt="story"
+                  className="w-64 h-64 object-cover rounded-lg mr-56"
+                />
+              </Link>
+              <h1 className="text-xl text-center mt-6 tracking-wider text-cyan-900 py-4 ">
+              <i><b>  Story Mode: </b></i><br /><span >Learn Everything about Finance In An Interactive Way Through tutorials and quizzes!</span>
+              </h1>
             </div>
-
-            <div className="pt-3">
-            <div className="flex place-content-start px-40 pt-11">
-             <Image src={book} width={130} height={130} className="rounded-2xl  hover:animate-spin"/>
-             </div>
-             <div className="flex place-content-end px-96 pb-3">
-             <Image src={book} width={130} height={130} className="rounded-2xl hover:animate-spin"/>
-             </div>
-             </div>
-
-
-            <div className="pt-24">
-            <div className="flex place-content-start px-[35rem] ">
-                <Link href='/Magazine'>
-            <Image src={book} width={130} height={130} className="rounded-2xl hover:animate-spin"/>
-            </Link>
+            <div className="grid grid-rows-2 ">
+              <Link href="/Magazine">
+                <img
+                  src="/magazin.gif"
+                  alt="magazine"
+                  className="w-64 h-64 object-cover rounded-lg mr-56"
+                />
+              </Link>
+              <p className="text-xl text-center mt-6 tracking-wide text-cyan-900 py-4 ">
+               <i><b> Magazine:</b></i> <br /><span>Read our handpicked Articles so you won't waste time finding your favourite Articles</span>
+              </p>
             </div>
-            </div>
-
-
-
-            <div className="py-40">
-            <div className="flex place-content-start px-40 ">
-             <Image src={book} width={130} height={130} className="rounded-2xl hover:animate-spin"/>
-             </div>
-             <div className="flex place-content-end px-96">
-             <Image src={book} width={130} height={130} className="rounded-2xl hover:animate-spin"/>
-             
-             </div>
-             
-             </div>
-
-
-             </div>
-     
-    );
+          </div>
+        </div>
+      );
+      
 }
